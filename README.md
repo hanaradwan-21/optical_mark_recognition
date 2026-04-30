@@ -17,12 +17,6 @@ An advanced Optical Mark Recognition (OMR) system built using **OpenCV** and **P
 *   **Pandas:** For structured data management and Excel export.[cite: 1]
 *   **Openpyxl:** Engine for writing Excel files.[cite: 1]
 
-##  Demo Results
-
-| Input Image Processing | Final Graded Output |
-| :---: | :---: |
-| ![Canny & Thresholding](https://via.placeholder.com/350x350?text=Image+Processing) | ![Final Result](https://via.placeholder.com/350x350?text=Graded+OMR) |
-*(Note: Replace these placeholders with your actual project screenshots like the one in image_d72716.jpg!)*
 
 ## 📂 Project Structure
 
