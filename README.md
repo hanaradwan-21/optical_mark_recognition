@@ -1,5 +1,10 @@
-Automatic OMR Grader with Multi-Selection Detection 📝✅
+Automatic OMR Grader with Multi-Selection Detection 📝✅:
+
+
 This is an advanced Optical Mark Recognition (OMR) system built using Python and OpenCV. It features a modern GUI for ease of use and intelligently detects multiple selections (invalid cases), providing detailed exports to Excel.
+
+
+
 
 🚀 Key Features
 User-Friendly GUI: Built with Tkinter for easy image selection and real-time result viewing.
@@ -14,9 +19,16 @@ Intelligent Detection:
 
 ⚪ Empty Answers: Detects unshaded questions.
 
+
+
+
 Perspective Correction: Automatically detects and flattens the answer sheet even if it's tilted.
 
+
+
 Data Export: Automatically generates an Excel file (Final_Result_Project.xlsx) with the student's score and question-by-question analysis.
+
+
 
 🛠️ Built With
 Python: The core programming language.
@@ -29,12 +41,18 @@ Pandas: For data management and Excel generation.
 
 Tkinter & Pillow: For the graphical user interface.
 
+
+
 📂 Project Structure
 main.py: The primary script containing the GUI and grading logic.
 
 utlis.py: Helper functions for image manipulation (Perspective transform, splitting boxes).
 
 Final_Result_Project.xlsx: (Auto-generated) The final grading report.
+
+
+
+
 
 ⚙️ How to Run
 Install dependencies:
