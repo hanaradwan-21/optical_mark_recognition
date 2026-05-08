@@ -1,35 +1,57 @@
-#  Automatic OMR Grader with Multi-Selection Detection
+Automatic OMR Grader with Multi-Selection Detection 📝✅
+This is an advanced Optical Mark Recognition (OMR) system built using Python and OpenCV. It features a modern GUI for ease of use and intelligently detects multiple selections (invalid cases), providing detailed exports to Excel.
 
-An advanced Optical Mark Recognition (OMR) system built using **OpenCV** and **Python**. This project doesn't just grade MCQ papers; it intelligently detects multiple selections (cheating/invalid cases) and exports detailed results to **Excel** for professional data tracking.
+🚀 Key Features
+User-Friendly GUI: Built with Tkinter for easy image selection and real-time result viewing.
 
-##  Key Features
+Intelligent Detection:
 
-*   **Perspective Transformation:** Automatically detects and flattens the MCQ sheet even if the photo is taken at an angle.
-*   **Multi-Selection Detection:** Flags questions where more than one bubble is shaded as "Invalid".
-*   **Intelligent Feedback:** Highlights correct answers in green, wrong in red, and provides a "Correct Answer" hint for mistakes.
-*   **Automated Reporting:** Generates a `Final_Result_Project.xlsx` file containing per-question status and final score.[cite: 1]
+✅ Correct Answer: Marked in Green.
 
-##  Built With
+❌ Wrong Answer: Marked in Red with the correct one highlighted.
 
-*   **Python 3.11+**
-*   **OpenCV:** For image processing and contour detection.[cite: 1]
-*   **NumPy:** For matrix operations and pixel value analysis.[cite: 1]
-*   **Pandas:** For structured data management and Excel export.[cite: 1]
-*   **Openpyxl:** Engine for writing Excel files.[cite: 1]
+⚠️ Multi-Selection: Detects if a student shaded more than one circle (marked in Yellow).
 
+⚪ Empty Answers: Detects unshaded questions.
 
-## 📂 Project Structure
+Perspective Correction: Automatically detects and flattens the answer sheet even if it's tilted.
 
-*   `OMR_Main.py`: The core engine for image processing and grading logic.[cite: 1]
-*   `utlis.py`: Helper functions for reordering points, splitting boxes, and drawing results.[cite: 1]
-*   `Final_Result_Project.xlsx`: Auto-generated grading report.[cite: 1]
+Data Export: Automatically generates an Excel file (Final_Result_Project.xlsx) with the student's score and question-by-question analysis.
 
-## ⚙️ How to Run
+🛠️ Built With
+Python: The core programming language.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/YourUsername/OMR-OpenCV-Project.git](https://github.com/YourUsername/OMR-OpenCV-Project.git)
-    ```
-2.  **Install dependencies:**
-    ```bash
-    pip install opencv-python numpy pandas openpyxl
+OpenCV: For image processing and contour detection.
+
+NumPy: For high-speed pixel calculations.
+
+Pandas: For data management and Excel generation.
+
+Tkinter & Pillow: For the graphical user interface.
+
+📂 Project Structure
+main.py: The primary script containing the GUI and grading logic.
+
+utlis.py: Helper functions for image manipulation (Perspective transform, splitting boxes).
+
+Final_Result_Project.xlsx: (Auto-generated) The final grading report.
+
+⚙️ How to Run
+Install dependencies:
+
+Bash
+pip install opencv-python numpy pandas pillow openpyxl
+Run the application:
+
+Bash
+python main.py
+Click Browse to select an image, then click Grade.
+
+💡 Customization
+You can easily adjust the settings in main.py:
+
+questions: Number of questions.
+
+choices: Number of options per question.
+
+ans: List of correct answer indices (starting from 0).
